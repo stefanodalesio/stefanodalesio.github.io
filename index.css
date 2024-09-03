@@ -62,11 +62,19 @@ footer p {
 
 .jumbotron {
   height: 800px;
+  background-color: #f8f9fa; /* Default background color when no image */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 20px;
+  position: relative;
+}
+
+.jumbotron.has-image {
   background-image: url("./IMG_0340.jpg");
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
   background-size: cover;
+  background-position: center;
 }
 
 .btn-main {
